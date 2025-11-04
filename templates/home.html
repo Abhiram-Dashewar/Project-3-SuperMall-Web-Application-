@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+{% block content %}
+<!--Hero Section-->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Connect Rural Business to Global Markets</h1>
+        <p>Super Mall is a revolutionary platform that empowers merchants from rural towns to advertise and sell
+            their products world wide. Join us in building marketplace form local talnet.</p>
+        <div class="hero-buttons">
+            <button class="btn btn-light">
+                <i class="fas fa-download"> Download App</i>
+            </button>
+        </div>
+    </div>
+    <div class="hero-image">
+        <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+            <path fill="rgba(255,255,255,0.2)"
+                d="M54.4,-57.2C69.5,-43.3,79.4,-21.7,79.9,0.6C80.4,22.9,71.5,45.8,56.4,59.3C41.3,72.8,20.7,76.9,0.9,75.9C-18.8,75,-37.7,69.1,-52.4,55.6C-67.1,42.1,-77.7,21,-78.8,-0.8C-79.9,-22.6,-71.5,-45.3,-56.8,-59.2C-42.1,-73.1,-21,-78.3,0.3,-78.6C21.7,-78.9,43.3,-74.3,54.4,-57.2Z"
+                transform="translate(250 200)" />
+            <circle cx="250" cy="200" r="120" fill="rgba(255,255,255,0.15)" />
+            <circle cx="250" cy="200" r="80" fill="rgba(255,255,255,0.2)" />
+            <circle cx="250" cy="200" r="40" fill="rgba(255,255,255,0.3)" />
+            <path fill="rgba(255,255,255,0.7)" d="M200,150 L300,150 L300,250 L200,250 Z" />
+            <path fill="rgba(255,255,255,0.5)" d="M220,170 L280,170 L280,230 L220,230 Z" />
+            <circle cx="250" cy="200" r="20" fill="rgba(255,255,255,0.8)" />
+            <path fill="#6a11cb" d="M245,195 L255,195 L255,205 L245,205 Z" />
+        </svg>
+    </div>
+</section>
+
+<div class="stats">
+    <div class="stat-item">
+        <div class="stat-number">250+</div>
+        <div class="stat-label">Rural Shops</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">5,000+</div>
+        <div class="stat-label">Products</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Countries Reached</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">98%</div>
+        <div class="stat-lable">Satisfied Customers</div>
+    </div>
+</div>
+
+<section id="features">
+    <div class="section-title">
+        <h2>Powerful Features</h2>
+        <p>Our platform offers a comprehensive set of tools for both merchants and customers.</p>
+    </div>
+    <div class="features">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-store"></i>
+            </div>
+            <h3>Shop Management</h3>
+            <p>Easily create and manage your shop details, products, and offers in one place with our intuitive
+                dashboard.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-tags"></i>
+            </div>
+            <h3>Offer Management</h3>
+            <p>Create attractive offers and promotions to increase your sales and visiablity with targeted campaigns.
+            </p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-layer-group"></i>
+            </div>
+            <h3>Category & Floor Management</h3>
+            <p>Organize your products by categories and floors for better customer navigation and discoverability.
+            </p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <h3>Smart Filtering</h3>
+            <p>Customers can easily find products by category, shop, floor, price range, or specific features.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-balance-scale"></i>
+            </div>
+            <h3>Product Comparison</h3>
+            <p>Compare products based on cost, features, and ratings to make informed purchasing decisions.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile Friendly</h3>
+            <p>Access the platform from any device with our responsive design and dedicated mobile application.</p>
+        </div>
+    </div>
+</section>
+
+<section class="user-features" id="explore">
+    <div class="section-title">
+        <h2>Explore Porducts</h2>
+        <p>Discover uniwue products from rural businessess around the world</p>
+    </div>
+    <div class="filter-section">
+        <h3>FIlter Products</h3>
+        <div class="filter-options">
+            <div class="filter-select">
+                <label for="filterCategory">Category</label>
+                <select id="filterCategory" class="form-control">
+                    <option value="">All Categories</option>
+                    <option value="clothing">Clothing & Fashion</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="food">Food & Beverages</option>
+                    <option value="handicrafts">Handicrafts</option>
+                    <option value="home">Home & Kitchen</option>
+                </select>
+            </div>
+            <div class="filter-select">
+                <label for="filterFloor">Floor</label>
+                <select id="filterFloor" class="form-control">
+                    <option value="">All Floors</option>
+                    <option value="ground">Ground Floor</option>
+                    <option value="first">First Floor</option>
+                    <option value="second">Second Floor</option>
+                    <option value="third">Third Floor</option>
+                </select>
+            </div>
+            <div class="filter-select">
+                <label for="filterShop">Shop</label>
+                <select id="filterShop" class="form-control">
+                    <option value="">All Shops</option>
+                    <option value="rural-textiles">Rural Textiles</option>
+                    <option value="handicraft-hub">Handicraft Hub</option>
+                    <option value="organic-foods">Organic Foods</option>
+                    <option value="village-electronics">Village Electronics</option>
+                </select>
+            </div>
+            <div class="filter-select">
+                <label for="filterPrice">Price Range</label>
+                <select id="filterPrice" class="form-control">
+                    <option value="">Any Price</option>
+                    <option value="0-25">Under ₹25</option>
+                    <option value="25-50">₹25 - ₹50</option>
+                    <option value="50-100">₹50 - ₹100</option>
+                    <option value="100+">Over ₹100</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="products-grid" id="userProductsGrid">
+        <!-- User products will be populated here -->
+    </div>
+
+    <script>
+        // Load products on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProducts();
+            loadFilters();
+        });
+
+        function loadProducts() {
+            fetch('/api/products')
+                .then(response => response.json())
+                .then(products => {
+                    displayProducts(products);
+                })
+                .catch(error => console.error('Error loading products:', error));
+        }
+
+        function loadFilters() {
+            fetch('/api/filters')
+                .then(response => response.json())
+                .then(data => {
+                    populateFilters(data);
+                })
+                .catch(error => console.error('Error loading filters:', error));
+        }
+
+        function populateFilters(data) {
+            const categorySelect = document.getElementById('filterCategory');
+            const floorSelect = document.getElementById('filterFloor');
+            const shopSelect = document.getElementById('filterShop');
+
+            // Clear existing options except "All"
+            categorySelect.innerHTML = '<option value="">All Categories</option>';
+            floorSelect.innerHTML = '<option value="">All Floors</option>';
+            shopSelect.innerHTML = '<option value="">All Shops</option>';
+
+            // Add categories
+            data.categories.forEach(cat => {
+                const option = document.createElement('option');
+                option.value = cat;
+                option.textContent = cat;
+                categorySelect.appendChild(option);
+            });
+
+            // Add floors
+            data.floors.forEach(floor => {
+                const option = document.createElement('option');
+                option.value = floor;
+                option.textContent = floor;
+                floorSelect.appendChild(option);
+            });
+
+            // Add shops
+            data.shops.forEach(shop => {
+                const option = document.createElement('option');
+                option.value = shop;
+                option.textContent = shop;
+                shopSelect.appendChild(option);
+            });
+        }
+
+        function displayProducts(products) {
+            const grid = document.getElementById('userProductsGrid');
+            grid.innerHTML = '';
+
+            if (products.length === 0) {
+                grid.innerHTML = '<p style="text-align: center; width: 100%;">No products found.</p>';
+                return;
+            }
+
+            products.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+
+                productCard.innerHTML = `
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">${product.name}</h3>
+                        <div class="product-shop">
+                            <i class="fas fa-store"></i> ${product.shop}
+                        </div>
+                        <div class="product-price">₹${product.price}</div>
+                        <div class="product-features">
+                            <div class="product-feature">
+                                <i class="fas fa-tag"></i> ${product.category}
+                            </div>
+                            <div class="product-feature">
+                                <i class="fas fa-cubes"></i> Stock: ${product.stock}
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary" onclick="viewProduct(${product.id})">
+                                <i class="fas fa-eye"></i> View
+                            </button>
+                        </div>
+                    </div>
+                `;
+
+                grid.appendChild(productCard);
+            });
+        }
+
+        function viewProduct(productId) {
+            // For now, just show an alert. In a real app, this would open a product detail modal or page
+            alert('Product details for ID: ' + productId);
+        }
+
+        // Filter functionality
+        document.getElementById('filterCategory').addEventListener('change', applyFilters);
+        document.getElementById('filterFloor').addEventListener('change', applyFilters);
+        document.getElementById('filterShop').addEventListener('change', applyFilters);
+        document.getElementById('filterPrice').addEventListener('change', applyFilters);
+
+        function applyFilters() {
+            const category = document.getElementById('filterCategory').value;
+            const floor = document.getElementById('filterFloor').value;
+            const shop = document.getElementById('filterShop').value;
+            const price = document.getElementById('filterPrice').value;
+
+            const params = new URLSearchParams();
+            if (category) params.append('category', category);
+            if (floor) params.append('floor', floor);
+            if (shop) params.append('shop', shop);
+            if (price) params.append('price', price);
+
+            fetch('/api/products?' + params.toString())
+                .then(response => response.json())
+                .then(products => {
+                    displayProducts(products);
+                })
+                .catch(error => console.error('Error filtering products:', error));
+        }
+    </script>
+
+    <div style="text-align: center; margin-top: 3rem;">
+        <button class="btn btn-primary" id="compareProductsBtn" style="display: none;">
+            <i class="fas fa-balance-scale"></i> Compare Selected Products
+        </button>
+    </div>
+</section>
+
+<!-- Login Modal -->
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Admin Login</h2>
+            <button class="btn btn-primary" id="modal-close">&times;</button>
+        </div>
+        <form id="loginForm" action="{{url_for('login')}}" method="POST">
+            {% if login_error %}
+            <div class="alert alert-error">{{ login_error }}</div>
+            {% endif %}
+
+            <div class="form-group">
+                <label for="loginEmail">Email Address</label>
+                <input type="email" name="email" id="loginEmail" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" name="password" id="loginPassword" class="form-control"
+                    placeholder="Enter your password">
+            </div>
+            <button style="text-align: center; margin-top: 1rem; width:100%; " type="submit" class="btn btn-primary"
+                id="loginSubmitBtn">
+                <i class="fas fa-sign-in-alt"></i> Login to Dashboard
+            </button>
+        </form>
+        <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; margin-top: 1.5rem;">
+            <p style="font-size: 0.9rem; margin: 0; color: #6c757d;">
+                <strong>Demo Credentials:</strong><br>
+                Email: admin@supermall.com<br>
+                Password: password123
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const loginModal = document.getElementById('loginModal');
+        const modalClose = document.getElementById('modal-close');
+        const loginBtn = document.getElementById('loginBtn');
+
+        loginBtn.addEventListener('click', () => showLoginModal());
+        modalClose.addEventListener('click', () => hideLoginModal());
+
+        // Show login modal
+        function showLoginModal() {
+            loginModal.style.display = 'flex';
+        }
+
+        modalClose.addEventListener("click", (e) => {
+            e.stopPropagation(); // prevent bubbling
+            loginModal.style.display = "none";
+        });
+
+        loginModal.addEventListener("click", (e) => {
+            if (e.target === loginModal) {
+                loginModal.style.display = "none";
+            }
+        });
+    })
+
+
+</script>
+
+{% endblock %}

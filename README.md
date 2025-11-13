@@ -29,6 +29,9 @@ This project demonstrates a full-stack implementation using Flask and database m
 - Generate reports for analytics.  
 - Manage user accounts and feedback.
 
+### Live site link
+- [SuperMall Web Application](https://project-3-supermall-web-application.onrender.com/)
+
 ---
 
 ## 🛠️ Tech Stack

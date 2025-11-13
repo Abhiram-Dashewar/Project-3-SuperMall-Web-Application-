@@ -49,5 +49,6 @@ Follow these steps to run the project locally:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/SuperMall-WebApp.git
-   cd SuperMall-WebApp
+   git clone https://github.com/Abhiram-Dashewar/Project-3-SuperMall-Web-Application-.git
+   cd Project-3-SuperMall-Web-Application-
+   python app.py
